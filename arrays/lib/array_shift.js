@@ -1,6 +1,7 @@
 'use strict';
+module.exports = exports = {};
 
-let insertShiftArray = (array, value) => {
+exports.insertShiftArray = (array, value) => {
   let newArray = [];
   let middle = array.length%2 === 1 ? (array.length + 1)/2 : array.length/2;
 
@@ -16,4 +17,17 @@ let insertShiftArray = (array, value) => {
   return newArray;
 };
 
-module.exports = insertShiftArray;
+exports.removeMiddle = (array) => {
+  let newArray = [];
+  let middle = array.length%2 === 1 ? (array.length + 1)/2 : array.length/2 + 1;
+
+  for (let i = 0; i < array.length - 1 ; i++ ) {
+    if (i < middle - 1) {
+      newArray[i] = array[i];
+    } else {
+      newArray[i] = array[i+1];
+    }
+  }  
+  return newArray;
+};
+
