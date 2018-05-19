@@ -19,3 +19,12 @@ create a method that inserts a value to the middle of the array and shifts the r
 
 ### Solution
 <img src="assets/array_shift.JPG" alt="whiteboard picture of the shift method"/>
+
+## Binary Search
+Takes two argumenets (a <b> sorted </b> array and a number(key)) and searches the array where the key and the index of the array match. The search will return the index of the array when found, if no matches are found, binary search will return -1.
+
+### Challenge
+create a method that searchs an array for the index where the array element matches the key. If no results found, return -1. Avoid using built in array prototype methods.
+
+### Solution
+<img src="assets/array_binary_search.JPG" alt="whiteboard picture of the shift method"/>
