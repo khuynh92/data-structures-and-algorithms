@@ -18,4 +18,4 @@ Takes two arguments (an array and any value) and inserts the value to the middle
 create a method that inserts a value to the middle of the array and shifts the rest of the values accordingly. Avoid using built in array prototype methods
 
 ### Solution
-<img src="assets/shift.JPG" alt="whiteboard picture of the shift method"/>
+<img src="assets/array_shift.JPG" alt="whiteboard picture of the shift method"/>
