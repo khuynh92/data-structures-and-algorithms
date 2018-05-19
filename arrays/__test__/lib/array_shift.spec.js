@@ -13,6 +13,6 @@ describe('array_shift Module', () => {
 
   it('should work for non numbers', () => {
     expect(insertShiftArray(['foo', 'bar'], 'baz')).toEqual(['foo', 'baz', 'bar']);
-  })
+  });
 
 });
