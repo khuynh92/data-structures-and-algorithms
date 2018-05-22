@@ -27,4 +27,13 @@ Takes two argumenets (a <b> sorted </b> array and a number(key)) and searches th
 create a method that searchs an array for the index where the array element matches the key. If no results found, return -1. Avoid using built in array prototype methods.
 
 ### Solution
-<img src="assets/array_binary_search.JPG" alt="whiteboard picture of the shift method"/>
+<img src="assets/array_binary_search.JPG" alt="whiteboard picture of the binarySearch method"/>
+
+## Array Adjacent Products 
+Take a 2-Dimensional array and locate the largest product of two adjacent values in the array. Adjacent values can be horizontally, vertically, or diagonally. 
+
+### Challenge
+create a method that takes in a 2-Dimensional array as an input and find the largest product of 2 adjacent values. Avoid using built in array prototype methods.
+
+### Solution
+<img src="assets/array_adjacent_product.JPG" alt="whiteboard picture of the largestProduct method"/>
