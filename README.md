@@ -36,4 +36,4 @@ Take a 2-Dimensional array and locate the largest product of two adjacent values
 create a method that takes in a 2-Dimensional array as an input and find the largest product of 2 adjacent values. Avoid using built in array prototype methods.
 
 ### Solution
-<img src="#" alt="whiteboard picture of the largestProduct method"/>
+<img src="assets/array_adjacent_product.JPG" alt="whiteboard picture of the largestProduct method"/>
