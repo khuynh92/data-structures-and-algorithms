@@ -7,7 +7,7 @@ class Node {
   }
 }
 
-class Singly_Linked_List {
+class Linked_List {
 
   constructor() {
     this.head = null;
@@ -44,6 +44,16 @@ class Singly_Linked_List {
       current.next.next = oldNext;
     }
   }
+
+  insertAfter(val, newVal) {
+    let current = this.head;
+    while(current.value !== val) {
+      current = current.next;
+    }
+    let oldNext = current.next; 
+    current.next = new Node(newVal);
+    current.next.next = oldNext;
+  }
 }
 
-module.exports = Singly_Linked_List;
+module.exports = Linked_List;

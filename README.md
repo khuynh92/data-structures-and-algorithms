@@ -37,3 +37,14 @@ create a method that takes in a 2-Dimensional array as an input and find the lar
 
 ### Solution
 <img src="assets/array_adjacent_product.JPG" alt="whiteboard picture of the largestProduct method"/>
+
+## Linked List Insertions
+Create  append, insertBefore, and insertAfter methods for a singly linked list.
+
+### Challenge
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+### Solution
+<img src="assets/ll_insertions.JPG" alt="whiteboard picture of the largestProduct method"/>
