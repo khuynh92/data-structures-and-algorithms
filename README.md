@@ -48,3 +48,27 @@ Create  append, insertBefore, and insertAfter methods for a singly linked list.
 
 ### Solution
 <img src="assets/ll_insertions.jpg" alt="whiteboard picture of the linked list insertions"/>
+
+### Solution
+<img src="assets/array_adjacent_product.JPG" alt="whiteboard picture of the largestProduct method"/>
+
+## Linked List Insertions
+Create  append, insertBefore, and insertAfter methods for a singly linked list.
+
+### Challenge
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+### Solution
+<img src="assets/ll_insertions.jpg" alt="whiteboard picture of the linked list insertions"/>
+
+## Linked List - Kth from the end
+given an interger(k), find the node in a linked list that is k from the end. Input is an integer and output is a node.
+
+### Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges. ​
+
+### Solution
+<img src="assets/ll_kth_from_end.JPG" alt="whiteboard picture of the linked list kth from the end"/>
+
