@@ -77,7 +77,7 @@ class Linked_List {
         current = current.next;
       }
     }
-    // Big O <-- 0(n);
+    //Big O <-- 0(n);
   }
 
   serialize() {
@@ -103,7 +103,8 @@ class Linked_List {
       let nodeArray = string.split(/\[/).map(node => node.split(/\]/)[0]);
 
       for(let i = 1; i < nodeArray.length - 1; i++) {
-        newList.append(JSON.parse(nodeArray[i]));
+        nodeArray[i] =  isNaN(parseInt(nodeArray[i])) ? nodeArray[i] : parseInt(nodeArray[i]);
+        newList.append(nodeArray[i]);
       }
       return newList;
     }

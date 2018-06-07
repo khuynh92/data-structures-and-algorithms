@@ -180,7 +180,7 @@ describe('Lab 05 Singly Linked List Module', ()=> {
 
   it('deserialize should take a stringified linked list and create a new linked list', () => {
     let newList = new Linked_List;
-    
+
     let actual = newList.deserialize(('[100] -> [x]'));
     expect(actual.head.value).toBe(100);
   });
@@ -193,4 +193,12 @@ describe('Lab 05 Singly Linked List Module', ()=> {
     expect(actual.head.next.next.value).toBe(300);
   });
 
+  it('deserialize should work for non numbers', () => {
+
+    let newList = new Linked_List;
+ 
+    let actual = newList.deserialize(('[hello] -> [world] -> [baz] -> [x]'));
+    expect(actual.head.next.next.value).toBe('baz');
+  });
+  
 });
