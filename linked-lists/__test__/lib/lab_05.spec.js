@@ -200,6 +200,5 @@ describe('Lab 05 Singly Linked List Module', ()=> {
     let actual = newList.deserialize(('[hello] -> [world] -> [baz] -> [x]'));
     expect(actual.head.next.next.value).toBe('baz');
   });
-
-  it()
+  
 });
