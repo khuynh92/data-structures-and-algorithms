@@ -51,20 +51,6 @@ class Linked_List {
     return outerCurrent;
 
   }
-
-  // kthFromEnd2(length) {
-  //   let nexts = 'current.next';
-  //   // for(let i = 0; i <= length; i++ ) {
-  //   //   nexts += '.next';
-  //   // }
-  //   console.log(nexts);
-  // let current = this.head;
-  // let counter = 0;
-  // // while(current.next) {
-  // //   if ()
-  // // }
-  // console.log(nexts);
-  // }
 }
 
 module.exports = Linked_List;
