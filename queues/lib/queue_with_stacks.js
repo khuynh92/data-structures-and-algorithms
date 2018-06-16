@@ -43,13 +43,32 @@ class Stack {
   }
 
   dequeue() {
+    let newStack = new Stack();
+    
+    if(this.tail === null) {
+      return 'Cannot dequeue non existent nodes';
+    }
+
     if(this.tail.value === this.head.value) {
       let tail = this.tail.value;
       this.tail = null;
       this.head = null;
       return tail;
     }
+  
+    while(this.tail) {
+      let popcorn = this.pop();
+      newStack.push(popcorn);
+    }
 
+    let first = newStack.pop();
+    
+    while(newStack.tail) {
+      let popcorn = newStack.pop();
+      this.push(popcorn);
+    }
+
+    return first;
   }
 }
 
