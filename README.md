@@ -91,3 +91,19 @@ Note: Length or Size are *not* included in standard properties for a LL.
 ### Solution
 <img src="assets/ll_detect_loop.JPG" alt="whiteboard picture of the linked list detect loop"/>
 
+## Queue with stacks
+Implement a Queue using two Stacks.
+
+### Challenge
+Implement the following methods for the Queue class:
+
+enqueue(value) which inserts value into the Queue using a first-in, first-out approach.
+
+dequeue() which extracts a value from the Queue using a first-in, first-out approach.
+
+You have access to 2 Stack instances with push and pop methods.
+
+### Solution
+<img src="assets/queue_with_stacks.JPG" alt="whiteboard picture of the queue with stacks."/>
+=======
+
