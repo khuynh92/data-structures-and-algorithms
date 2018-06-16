@@ -105,5 +105,19 @@ You have access to 2 Stack instances with push and pop methods.
 
 ### Solution
 <img src="assets/queue_with_stacks.JPG" alt="whiteboard picture of the queue with stacks."/>
+
+
+## fifo animal shelter
+First-in, First out Animal Shelter.
+
+
+### Challenge
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ return the longest-waiting cat. If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
+
+### Solution
+<img src="assets/fifo_animal_shelter.JPG" alt="whiteboard picture of fifo animal shelter"/>
 =======
 
