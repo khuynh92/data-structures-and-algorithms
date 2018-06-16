@@ -81,18 +81,13 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 ### Solution
 <img src="assets/ll_merge.JPG" alt="whiteboard picture of the linked list kth from the end"/>
 
-
-## Linked List - merge
-Implement a Queue using two Stacks.
+## Linked List - hasLoop
+Identify a circular reference in a linked list.
 
 ### Challenge
-Implement the following methods for the Queue class:
-
-enqueue(value) which inserts value into the Queue using a first-in, first-out approach.
-
-dequeue() which extracts a value from the Queue using a first-in, first-out approach.
-
-You have access to 2 Stack instances with push and pop methods.
+Write a method for the Linked List class called hasLoop which takes no arguments. Return a boolean that indicates whether or not a circular reference or loop is present in the linked list. Your implementation must not use any additional memory or modify the nodes of the linked list. You have access to the Node class and all the standard properties on the Linked List class as well as the methods created in previous challenges.
+Note: Length or Size are *not* included in standard properties for a LL.
 
 ### Solution
-<img src="assets/queue_with_stacks.JPG" alt="whiteboard picture of the queue with stacks."/>
+<img src="assets/ll_detect_loop.JPG" alt="whiteboard picture of the linked list detect loop"/>
+
