@@ -81,7 +81,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 ### Solution
 <img src="assets/ll_merge.JPG" alt="whiteboard picture of the linked list kth from the end"/>
 
-## Linked List - hasloop
+## Linked List - hasLoop
 Identify a circular reference in a linked list.
 
 ### Challenge
@@ -90,3 +90,4 @@ Note: Length or Size are *not* included in standard properties for a LL.
 
 ### Solution
 <img src="assets/ll_detect_loop.JPG" alt="whiteboard picture of the linked list detect loop"/>
+
