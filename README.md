@@ -119,5 +119,18 @@ dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ re
 
 ### Solution
 <img src="assets/fifo_animal_shelter.JPG" alt="whiteboard picture of fifo animal shelter"/>
-=======
 
+
+
+## Multi-bracket-validation
+Multi-bracket Validation.
+
+## Challenge
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()  
+Square Brackets : []  
+Curly Brackets : {}  
+
+### Solution
+<img src="assets/multi-bracket-validation.JPG" alt="whiteboard picture ofmulti bracket validation"/>
