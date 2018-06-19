@@ -3,28 +3,36 @@
 function multiBracketValidation(input) {
 
   for (let i = 0; i < input.length; i++) {
-    if (input[i] === '{' || input[i] === '[') {
-      for (let j = i + 1; j < input.length; j++) {
-        if (input.charCodeAt(j) === input.charCodeAt(i) + 2) {
-          input = input.replace(input[j], '.');
-          break;
-        }
+
+    if (input[i] === '{') {
+      if (/\}/.test(input)) {
+        input = input.replace(/\}/, '.');
+      } else {
+        return false;
       }
+    }
+    
+    if (input[i] === '[') {
+      if (/\]/.test(input)) {
+        input = input.replace(/\]/, '.');
+      } else {
+        return false;
+      } 
     }
 
     if (input[i] === '(') {
-      for (let j = i + 1; j < input.length; j++) {
-        if (input.charCodeAt(j) === input.charCodeAt(i) + 1) {
-          input = input.replace(input[j], '.');
-          break;
-        }
+      if (/\)/.test(input)) {
+        input = input.replace(/\)/, '.');
+      } else {
+        return false;
       }
-    }
 
-    if (/\}|\]|\)/.test(input[i])) return false;
+    }
   }
+  
+  if (/\}|\]|\)/.test(input)) return false;
+
   return true;
 }
-
 
 module.exports = multiBracketValidation;
