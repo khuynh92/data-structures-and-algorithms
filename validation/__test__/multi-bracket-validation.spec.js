@@ -20,4 +20,8 @@ describe('multibracketvalidation', () => {
     expect(multiBracketValidation('(w)o()()()((()))aaa[h][][][][][]{{{{}}}}{}{}{}{aaaaah}')).toBe(true);
   });
 
+  it('should return false for equal brackets but incorrect usage', () => {
+    expect(multiBracketValidation('{hello world(})')).toBe(false);
+  });
+
 });
