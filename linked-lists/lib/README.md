@@ -1,4 +1,4 @@
-# Lab 05 Data Structures and Algorithms
+# Lab 10 Stacks and Queues
 
 ## To install
 
@@ -13,11 +13,19 @@ To run a test, ensure you're in the project's root directory, and then run:
 `npm test` <-- tests functionality of all functions
 `npm run lint` <-- tests to ensure no lint errors exist.
 
-## Linked List Methods
+## Stack methods
 
-### .append(val)
+### .push(val)
 
-append will add a new to the end of the Linked List If the linked list is empty, append will create a new head.
+push will add a new node with the given (val) to the beginning of the stack as the 'top'. If the stack is empty, append will create a new top.
+
+'
+
+code
+
+'
+
+
 
 ### .prepend(val)
 
