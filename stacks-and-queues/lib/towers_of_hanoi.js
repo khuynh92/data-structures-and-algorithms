@@ -44,7 +44,6 @@ class Stack {
       stack1.push(i);
     }
     let prev;
-    let stack3isTopped = false;
     while (stack1.top || stack2.top) {
 
       if (stack2.top && stack2.top.value !== prev) {
