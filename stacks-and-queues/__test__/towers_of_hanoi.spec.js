@@ -12,6 +12,10 @@ describe('towers of hanoi', () => {
     expect(Stack.towersOfHanoi(3).top.next.next.value).toBe(3);
   });
 
+  it('should work for a stack of 4', () => {
+    expect(Stack.towersOfHanoi(4).top.next.next.next.value).toBe(4);
+  });
+
   it('should work for a stack of larger numbers', () => {
     expect(Stack.towersOfHanoi(7).top.next.next.next.next.next.next.value).toBe(7);
   });

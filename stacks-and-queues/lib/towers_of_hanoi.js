@@ -44,7 +44,9 @@ class Stack {
       stack1.push(i);
     }
     let prev;
+    let stack3isTopped = false;
     while (stack1.top || stack2.top) {
+
       if (stack2.top && stack2.top.value !== prev) {
         if (!stack3.top || (stack2.top.value < stack3.top.value)) {
           let pop = stack2.pop();
@@ -63,14 +65,14 @@ class Stack {
       }
   
       if (stack3.top && stack3.top.value !== prev) {
-        if (!stack2.top || (stack3.top.value < stack2.top.value)) {
+        if (!stack2.top || (stack3.top.value < stack2.top.value) && stack3.top !== n) {
           let pop = stack3.pop();
           stack2.push(pop);
           prev = stack2.top.value;
           console.log(`Disk ${pop} has moved to stack B`);
 
           continue;
-        } else if (!stack1.top || (stack3.top.value < stack1.top.value)) {
+        } else if (!stack1.top || (stack3.top.value < stack1.top.value)  && stack3.top !== n) {
           let pop = stack3.pop();
           stack1.push(pop);
           prev = stack1.top.value;
