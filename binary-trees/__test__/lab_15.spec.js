@@ -71,14 +71,88 @@ describe('BST', () => {
     expect(bst.find(5)).toBe(false);
   });
 
-  it('find should return false if no node is found on right', () => {
+  it('return a null root for removing one', () => {
     bst.insert(4);
-    bst.insert(1);
-    bst.insert(2);
-    bst.insert(3);
 
-    bst.remove(3);
-    expect(bst.find(5)).toBe(false);
+    bst.remove(4);
+
+    expect(bst.root).toBe(null);
   });
+
+  it('remove the root and change it to 5', () => {
+    bst.insert(4);
+    bst.insert(5);
+    
+    bst.remove(4);
+
+    expect(bst.root.value).toBe(5);
+  });
+
+  it('remove the root and change it to 5', () => {
+    bst.insert(4);
+    bst.insert(3);
+    
+    bst.remove(4);
+
+    expect(bst.root.value).toBe(3);
+  });
+
+  it('the removed node is to the right of the parent with no children', () => {
+    bst.insert(4);
+    bst.insert(5);
+    
+    bst.remove(5);
+
+    expect(bst.root.value).toBe(4);
+  });
+  it('the removed node is to the right of the parent with only left children', () => {
+    bst.insert(4);
+    bst.insert(6);
+    bst.insert(7);
+    
+    bst.remove(5);
+
+    expect(bst.root.value).toBe(4);
+  });
+  it('the removed node is to the right of the parent with no children', () => {
+    bst.insert(4);
+    bst.insert(3);
+    
+    bst.remove(3);
+
+    expect(bst.root.left.value).toBe(3);
+  });
+
+  it('remove the a node that only has a left child', () => {
+    bst.insert(10);
+    bst.insert(9);
+    bst.insert(11);
+    bst.insert(8);
+    
+    bst.remove(9);
+    expect(bst.root.left.value).toBe(8);
+  });
+
+  it('remove the a node that only has a right child', () => {
+    bst.insert(11);
+    bst.insert(9);
+    bst.insert(10);
+    bst.insert(12);
+    
+    bst.remove(9);
+    expect(bst.root.left.value).toBe(10);
+  });
+
+  it('remove the a node that has both children', () => {
+    bst.insert(11);
+    bst.insert(9);
+    bst.insert(10);
+    bst.insert(12);
+    
+    bst.remove(11);
+    expect(bst.root.value).toBe(12);
+  });
+
+
 
 });
