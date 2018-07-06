@@ -153,6 +153,64 @@ describe('BST', () => {
     expect(bst.root.value).toBe(12);
   });
 
+  it('preorder should work for one value', () => {
+    bst.insert(28);
+    
+    let bsts = bst.serialize();
 
+    expect(bsts[0]).toBe(28);
+    expect(bsts[1]).toBe('x');
+    expect(bsts[2]).toBe('x');
 
+  });
+
+  it('serialize should work for left only trees', () => {
+    bst.insert(10);
+    bst.insert(8);
+    bst.insert(7);
+    bst.insert(6);
+    
+    let bsts = bst.serialize();
+
+    expect(bsts).toEqual([10, 8, 7, 6, 'x', 'x', 'x', 'x', 'x']);
+
+  });
+
+  it('serialize should work for right only trees', () => {
+    bst.insert(6);
+    bst.insert(7);
+    bst.insert(8);
+    bst.insert(9);
+    
+    let bsts = bst.serialize();
+
+    expect(bsts).toEqual([6, 'x', 7, 'x', 8, 'x', 9, 'x', 'x']);
+
+  });
+
+  it('deserialize should work for a one node tree', () => {
+    let bst = BinarySearchTree.deserialize([28, 'x', 'x']);
+
+    expect(bst.root.value).toBe(28);
+  });
+
+  it('deserialize should work for left only trees', () => {
+    let bst = BinarySearchTree.deserialize([10, 8, 7, 6, 'x', 'x', 'x', 'x', 'x']);
+
+    expect(bst.root.value).toBe(10);
+    expect(bst.root.left.value).toBe(8);
+    expect(bst.root.left.left.value).toBe(7);
+    expect(bst.root.right).toBe(null);
+
+  });
+
+  it('deserialize should work for right only trees', () => {
+    let bst = BinarySearchTree.deserialize([6, 'x', 7, 'x', 8, 'x', 9, 'x', 'x']);
+
+    expect(bst.root.value).toBe(6);
+    expect(bst.root.right.value).toBe(7);
+    expect(bst.root.right.right.value).toBe(8);
+    expect(bst.root.left).toBe(null);
+
+  });
 });

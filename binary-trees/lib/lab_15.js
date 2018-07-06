@@ -51,6 +51,21 @@ class BinarySearchTree {
     this.root = deleting(this.root, value);
   }
 
+  serialize() {
+    let arr = [];
+    return arrayify(this.root, arr);
+  }
+
+  static deserialize(array) {
+    let bst = new BinarySearchTree();
+    for(let i = 0; i < array.length; i++) {
+      if(array[i] !== 'x') {
+        bst.insert(array[i]);
+      }
+    }
+    return bst;
+  }
+
 }
 
 function contains(node, n) {
@@ -136,6 +151,22 @@ function deleting(node, n) {
     }
   }
   return node;
+}
+
+function arrayify(node, arr) {
+  arr.push(node.value);
+
+  if(node.left) {
+    arrayify(node.left, arr);
+  } else {
+    arr.push('x');
+  }
+  if(node.right) {
+    arrayify(node.right, arr);
+  } else {
+    arr.push('x');
+  }
+  return arr;
 }
 
 module.exports = BinarySearchTree;

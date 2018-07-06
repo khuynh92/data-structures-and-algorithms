@@ -104,8 +104,9 @@ function breadthFirstTraversal(tree) {
   if(!tree.root) {
     return arr;
   }
+  
   queue.enqueue(tree.root);
-  console.log(queue);
+
   while(queue.head) {
     let node = queue.dequeue();
     if(node.left) {
