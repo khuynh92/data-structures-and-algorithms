@@ -178,3 +178,11 @@ Write a function called find-maximum-value which takes binary tree as its only i
 ### Solution
 <img src="assets/find-maximum-value-binary-tree.JPG" alt="whiteboard picture of find-maximum-value-binary-tree"/>
 
+## Sum of numbers in a binary tree
+
+### Challenge
+add all odd values in a binary search tree
+
+### Solution
+<img src="assets/sum_of_odd_numbers.JPG" alt="whiteboard picture of sum_of_odd_numbers"/>
+
