@@ -1,76 +1,76 @@
-'use strict';
+// 'use strict';
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
+// class Node {
+//   constructor(value) {
+//     this.value = value;
+//     this.next = null;
+//   }
+// }
 
-class LinkedList {
+// class LinkedList {
 
-  constructor() {
-    this.head = null;
-  }
+//   constructor() {
+//     this.head = null;
+//   }
 
-  insert(value) {
-    let node = new Node(value);
+//   insert(value) {
+//     let node = new Node(value);
 
-    if(!this.head) {
-      this.head = node;
-      return this;
-    }
+//     if(!this.head) {
+//       this.head = node;
+//       return this;
+//     }
 
-    let current = this.head;
+//     let current = this.head;
 
-    while(current.next) {
-      current = current.next;
-    }
+//     while(current.next) {
+//       current = current.next;
+//     }
 
-    current.next = node;
+//     current.next = node;
 
-    return this;
-  }
+//     return this;
+//   }
 
-  palindrome() {
-    let arr = [];
+//   palindrome() {
+//     let arr = [];
 
-    if (!this.head) {
-      return true;
-    }
+//     if (!this.head) {
+//       return true;
+//     }
 
-    if(!this.head.next) {
-      return true;
-    }
+//     if(!this.head.next) {
+//       return true;
+//     }
 
-    let current = this.head;
-    while(current) {
-      arr.push(current.value);
-      current = current.next;
-    }
-  }
+//     let current = this.head;
+//     while(current) {
+//       arr.push(current.value);
+//       current = current.next;
+//     }
+//   }
 
-  reverse() {
-    if(!this.head) {
-      return null;
-    }
+//   reverse() {
+//     if(!this.head) {
+//       return null;
+//     }
 
-    if(!this.head.next) {
-      return this;
-    }
+//     if(!this.head.next) {
+//       return this;
+//     }
 
-    let current = this.head;
-    let hold = current.next.next;
+//     let current = this.head;
+//     let hold = current.next.next;
 
-    while(current.next) {
+//     while(current.next) {
       
-    }
+//     }
 
 
 
-  }
+//   }
 
-}
+// }
 
 
-module.exports = LinkedList;
+// module.exports = LinkedList;
