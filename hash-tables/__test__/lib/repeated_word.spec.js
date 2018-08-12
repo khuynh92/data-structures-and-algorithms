@@ -15,7 +15,7 @@ describe('repeated word', () => {
   });
 
   it('should find a repeated word for a string (uppercase extra characters edgecase)', () => {
-    let str = 'It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...'
+    let str = 'It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...';
 
     expect(repeatedWord(str)).toBe('summer');
   });
