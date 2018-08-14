@@ -178,6 +178,7 @@ Write a function called find-maximum-value which takes binary tree as its only i
 ### Solution
 <img src="assets/find-maximum-value-binary-tree.JPG" alt="whiteboard picture of find-maximum-value-binary-tree"/>
 
+
 ## Sum of numbers in a binary tree
 
 ### Challenge
@@ -185,4 +186,16 @@ add all odd values in a binary search tree
 
 ### Solution
 <img src="assets/sum_of_odd_numbers.JPG" alt="whiteboard picture of sum_of_odd_numbers"/>
+
+## reapeatedWord
+
+Find the first repeated word in a book.
+
+## Challenge
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+### Solution
+<img src="assets/repeated_word.JPG" alt="whiteboard picture of repeated word"/>
+
 
