@@ -14,7 +14,7 @@ function commonWord(str) {
 
   Object.entries(obj).forEach(element => {
     greatest = element[1] > greatest[1] ? element : greatest;
-  })
+  });
 
   return greatest[0];
 }
